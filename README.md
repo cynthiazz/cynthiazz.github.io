@@ -1,2 +1,3 @@
-# cynthiazz.github.io
-Cynthia Zhong's personal website
+# cynthiazz
+Cynthia Zhong's personal website <br>
+Created in December 2019
