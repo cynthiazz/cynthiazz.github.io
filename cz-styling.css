@@ -35,31 +35,44 @@ body, html {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	margin-right: 2vw;
 }
 
-#section-links-box a {
+#section-links-box div {
+	margin: 0 1.5vw 0 0;
+	font-size: 18px;
+}
+
+.section-link {
 	color: black;
 	opacity: .7;
 	text-decoration: none;
+	padding: 0.1em 0.4em 0.1em 0.4em;
 }
 
-#section-links-box a:hover {
+.section-link.active {
+	border-bottom: solid 3px #6C3F60;
+	color: #6C3F60;
+	font-weight: 600;
+	opacity: 1;
+}
+
+.section-link:hover {
 	opacity: 1;
 	transition-duration: 300ms;
 }
 
-.section-link {
-	margin: 1vh 2vw 1vh 1vw;
-	font-size: 18px;
-}
-
 /* Index Page */
-
-#about {
+.section {
 	position: relative;
+	padding-top: 3vh;
+	padding-bottom: 5vh;
 	top: 10vh;
 	width: 100vw;
+	height: auto;
+}
+
+#about {
+	padding-top: 0;
 	height: 90vh;
 	/*background: #F0EEF0;*/
 }
@@ -80,14 +93,11 @@ body, html {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	/*background: red;*/
 }
 
 #profile-and-links {
 	position: relative;
-	/*left: 0;*/
 	width: 30vw;
-	/*background: green;*/
 }
 
 #profile-and-links img {
@@ -95,41 +105,6 @@ body, html {
 	top: 8%;
 	height: auto;
 	width: 23vw;
-}
-
-/* icon resources from elegantthemes.com */
-.icon-profile-female, .icon-envelope, .icon-pencil, .icon-linkedin{
-	font-family: 'et-line';
-	speak: none;
-	font-style: normal;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	/*display:inline-block;*/
-}
-
-.icon-profile-female:before {
-	content: "\e041";
-	font-size: 24px;
-	color: #52303F;
-}
-.icon-linkedin:before {
-	content: "\e062";
-	font-size: 24px;
-	color: #52303F;
-}
-.icon-envelope:before {
-	content: "\e028";
-	font-size: 24px;
-	color: #52303F;
-}
-.icon-pencil:before {
-	content: "\e032";
-	font-size: 24px;
-	color: #52303F;
 }
 
 /* Icon fonts by Mario del Valle Guijarro
@@ -227,8 +202,6 @@ https://mariodelvalle.github.io/CaptainIconWeb/ */
 /* book */
 .icon-079:before {
 	content: "\e64e";
-	font-size: 24px;
-	color: #52303F;
 }
 
 /* music note */
@@ -293,14 +266,6 @@ https://mariodelvalle.github.io/CaptainIconWeb/ */
 }
 
 /* Experience & Project Sections */
-.section {
-	padding-top: 3vh;
-	padding-bottom: 5vh;
-	position: relative;
-	top: 10vh;
-	width: 100vw;
-	height: auto;
-}
 
 #exp {
 	background: #E5EDEB;
@@ -412,7 +377,7 @@ https://mariodelvalle.github.io/CaptainIconWeb/ */
 	font-size: 14px;
 }
 
-#interests {
+#skills {
 	background: #EAE5EA;
 }
 
@@ -441,14 +406,34 @@ https://mariodelvalle.github.io/CaptainIconWeb/ */
 	/*border: solid;*/
 }
 
-.int-cell h3 {
-	margin-top: 0;
-	margin-bottom: 1em;
+.int-cell a {
+	color: #6C3F60;
+	text-decoration: none;
+	font-weight: 700;
+}
+
+.int-name {
+	margin: 0 0 1em 0;
+}
+
+.int-name span {
+	color: #6C3F60;
+}
+
+.int-name h3 {
+	display: inline-block;
+	margin: 0 0 0 0.5em;
 	font-weight: 600;
 }
 
-#credits {
-	margin-bottom: 20vh;
+.int-desc {
+	font-size: 14px;
+	text-align: justify;
+}
+
+#notes {
+	background: #E5EDEB;
+	padding-bottom: 15vh;
 }
 
 #sitecred {
