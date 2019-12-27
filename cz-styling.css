@@ -1,0 +1,466 @@
+body, html {
+	margin: 0px;
+	font-family: "Open Sans", sans-serif;
+	background: #FAFAFA;
+}
+
+/* Header Styling */
+#header {
+	position: fixed;
+	width: 100vw;
+	height: 10vh;
+	background: #FEFEFE;
+	border-bottom: 1px solid #52303F;
+	z-index: 999;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+
+#logo {
+	position: relative;
+	left: 3%;
+}
+
+#logo img {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 6vw;
+	height: auto;
+}
+
+#section-links-box {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-right: 2vw;
+}
+
+#section-links-box a {
+	color: black;
+	opacity: .7;
+	text-decoration: none;
+}
+
+#section-links-box a:hover {
+	opacity: 1;
+	transition-duration: 300ms;
+}
+
+.section-link {
+	margin: 1vh 2vw 1vh 1vw;
+	font-size: 18px;
+}
+
+/* Index Page */
+
+#about {
+	position: relative;
+	top: 10vh;
+	width: 100vw;
+	height: 90vh;
+	/*background: #F0EEF0;*/
+}
+
+#about a {
+	color: #7D1F51;
+	font-weight: 600;
+	text-decoration: none;
+}
+
+#about-container {
+	position: absolute;
+	left: 15vw;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 70vw;
+	height: 70vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	/*background: red;*/
+}
+
+#profile-and-links {
+	position: relative;
+	/*left: 0;*/
+	width: 30vw;
+	/*background: green;*/
+}
+
+#profile-and-links img {
+	position: absolute;
+	top: 8%;
+	height: auto;
+	width: 23vw;
+}
+
+/* icon resources from elegantthemes.com */
+.icon-profile-female, .icon-envelope, .icon-pencil, .icon-linkedin{
+	font-family: 'et-line';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	/*display:inline-block;*/
+}
+
+.icon-profile-female:before {
+	content: "\e041";
+	font-size: 24px;
+	color: #52303F;
+}
+.icon-linkedin:before {
+	content: "\e062";
+	font-size: 24px;
+	color: #52303F;
+}
+.icon-envelope:before {
+	content: "\e028";
+	font-size: 24px;
+	color: #52303F;
+}
+.icon-pencil:before {
+	content: "\e032";
+	font-size: 24px;
+	color: #52303F;
+}
+
+/* Icon fonts by Mario del Valle Guijarro
+https://mariodelvalle.github.io/CaptainIconWeb/ */
+@font-face {
+	font-family: 'captainicon';
+	src:url('fonts/captainicon.eot?-1i2a56');
+	src:url('fonts/captainicon.eot?#iefix-1i2a56') format('embedded-opentype'),
+		url('fonts/captainicon.woff?-1i2a56') format('woff'),
+		url('fonts/captainicon.ttf?-1i2a56') format('truetype'),
+		url('fonts/captainicon.svg?-1i2a56#captainicon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'captainicon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/* profile */
+.icon-048:before {
+	content: "\e62f";
+	font-size: 22px;
+	color: #807c7e;
+}
+.icon-298:before {
+	content: "\e729";
+	font-size: 22px;
+	color: #807c7e;
+}
+/* name card */
+.icon-163:before {
+	content: "\e6a2";
+	font-size: 22px;
+	color: #515151;
+}
+
+/* fb */
+.icon-091:before {
+	content: "\e65a";
+	font-size: 22px;
+	color: #515151;
+}
+.icon-092:before {
+	content: "\e65b";
+	font-size: 22px;
+	color: #807c7e;
+}
+.icon-093:before {
+	content: "\e65c";
+}
+
+/* linkedin */
+.icon-109:before {
+	content: "\e66c";
+	font-size: 22px;
+	color: #807c7e;
+}
+.icon-110:before {
+	content: "\e66d";
+	font-size: 22px;
+	color: #515151;
+}
+.icon-111:before {
+	content: "\e66e";
+}
+
+/* github? */
+.icon-150:before {
+	content: "\e695";
+	font-size: 22px;
+	color: #515151;
+}
+
+/* location pin */
+.icon-002:before {
+	content: "\e601";
+}
+
+/* link */
+.icon-245:before {
+	content: "\e6f4";
+}
+
+/* book */
+.icon-079:before {
+	content: "\e64e";
+	font-size: 24px;
+	color: #52303F;
+}
+
+/* music note */
+.icon-085:before {
+	content: "\e654";
+}
+
+/* text cursor */
+.icon-261:before {
+	content: "\e704";
+}
+
+/* leaves */
+.icon-369:before {
+	content: "\e770";
+}
+
+/* thumbs up */
+.icon-211:before {
+	content: "\e6d2";
+}
+
+#profile-and-links p {
+	position: absolute;
+	top: 78%;
+	font-size: 14px;
+	margin: 0;
+}
+
+#about-bio {
+	position: relative;
+	width: 40vw;
+	text-align: justify;
+	/*background: blue;*/
+}
+
+#plinks {
+	position: absolute;
+	display: flex;
+	flex-direction: row;
+	top: 85%;
+}
+
+#plinks span {
+	margin-right: 20px;
+}
+
+#name {
+	font-family: "Crimson Text", serif;
+	font-size: 60px;
+	margin-top: 0.1em;
+    margin-bottom: 0.1em;
+}
+
+#lang-ops {
+	position: absolute;
+	top: 80%;
+	left: 93%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/* Experience & Project Sections */
+.section {
+	padding-top: 3vh;
+	padding-bottom: 5vh;
+	position: relative;
+	top: 10vh;
+	width: 100vw;
+	height: auto;
+}
+
+#exp {
+	background: #E5EDEB;
+}
+
+.timeline-wrap {
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 70vw;
+	height: auto;
+	/*background: blue;*/
+}
+
+.timeline-wrap a {
+	color: #6C3F60;
+	text-decoration: none;
+}
+
+.section-title {
+	position: relative;
+	height: 25vh;
+	font-family: "Crimson Text", serif;
+}
+
+.section-title h2 {
+	position: absolute;
+	top: 15%;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 42px;
+}
+
+.section-title h2:hover {
+	color: #6C3F60;
+	transition-duration: 300ms;
+}
+
+.section-title-ipa {
+	position: absolute;
+	top: 70%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.section-title-ipa:hover {
+	color: #6C3F60;
+	transition-duration: 300ms;
+}
+
+.timeline-catog {
+	padding-top: 5vh;
+	padding-bottom: 3vh;
+}
+
+.timeline-catog h3 {
+	font-size: 26px;
+	font-weight: 400;
+	color: #6C3F60;
+}
+
+.timeline-cell {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 70vw;
+	margin-bottom: 5vh;
+}
+
+.timeline-cell h4 {
+	margin: 0;
+}
+
+.timeline-head {
+	width: 30vw;
+	padding-right: 5vw;
+}
+
+.timeline-head h4 {
+	font-weight: 700;
+}
+
+.timeline-head span {
+	font-weight: 200;
+	font-size: 13px;
+}
+
+.timeline-desc {
+	width: 40vw;
+}
+
+.timeline-desc h4 {
+	font-weight: 600;
+}
+
+.timeline-desc p {
+	margin-top: 1vh;
+	margin-bottom: 0.5vh;
+	font-size: 15px;
+	text-align: justify;
+}
+
+.timeline-desc span {
+	font-size: 14px;
+}
+
+.timeline-desc .icon-245:before {
+	color: #6C3F60;
+	font-size: 14px;
+}
+
+#interests {
+	background: #EAE5EA;
+}
+
+#interests-wrap {
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 80vw;
+	height: auto;
+}
+
+.int-row {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-bottom: 2vh;
+	/*border: solid;*/
+}
+
+.int-cell {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 2.5em;
+	width: 40vw;
+	/*border: solid;*/
+}
+
+.int-cell h3 {
+	margin-top: 0;
+	margin-bottom: 1em;
+	font-weight: 600;
+}
+
+#credits {
+	margin-bottom: 20vh;
+}
+
+#sitecred {
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 70vw;
+	text-align: center;
+}
+
+#sitecred a {
+	color: #7D1F51;
+	font-weight: 600;
+	text-decoration: none;
+}
