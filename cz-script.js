@@ -33,7 +33,7 @@ $(document).ready(function(){
 		// id of clicked section
 		var id = $(this).attr('href');
 
-		$('html, body').animate({
+		$('html').animate({
 			scrollTop: $(id).offset().top - headerHeight
 		}, 800);
 	})

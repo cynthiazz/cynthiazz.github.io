@@ -17,20 +17,6 @@ body, html {
 	justify-content: space-between;
 }
 
-
-#logo {
-	position: relative;
-	left: 3%;
-}
-
-#logo img {
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	width: 6vw;
-	height: auto;
-}
-
 #section-links-box {
 	display: flex;
 	flex-direction: row;
@@ -49,7 +35,7 @@ body, html {
 	padding: 0.1em 0.4em 0.1em 0.4em;
 }
 
-.section-link.active {
+.active {
 	border-bottom: solid 3px #7D1F51;
 	color: #7D1F51;
 	font-weight: 600;
@@ -59,6 +45,24 @@ body, html {
 .section-link:hover {
 	opacity: 1;
 	transition-duration: 300ms;
+}
+
+#logo {
+	position: relative;
+	left: 3%;
+}
+
+#logo a {
+	opacity: 1;
+	border: none;
+}
+
+#logo img {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 6vw;
+	height: auto;
 }
 
 /*#lang-ops {
