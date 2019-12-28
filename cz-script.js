@@ -37,4 +37,16 @@ $(document).ready(function(){
 			scrollTop: $(id).offset().top - headerHeight
 		}, 800);
 	})
+
+	$('a[href="#lang"').click(function(){
+		$('html').animate({
+			scrollTop: $('#lang').offset().top - headerHeight
+		}, 800);
+	})
+
+	$('a[href="#notes"').click(function(){
+		$('html').animate({
+			scrollTop: $('#notes').offset().top - headerHeight
+		}, 800);
+	})
 })

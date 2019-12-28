@@ -36,8 +36,8 @@ body, html {
 }
 
 .active {
-	border-bottom: solid 3px #7D1F51;
-	color: #7D1F51;
+	border-bottom: solid 3px #6C3F60;
+	color: #6C3F60;
 	font-weight: 600;
 	opacity: 1;
 }
@@ -75,7 +75,7 @@ body, html {
 	align-items: center;
 }*/
 
-/* Index Page */
+/*General Section Styling*/
 .section {
 	position: relative;
 	padding-top: 3vh;
@@ -91,6 +91,42 @@ body, html {
 	font-weight: 600;
 }
 
+.section-title {
+	position: relative;
+	height: 25vh;
+	font-family: "Crimson Text", serif;
+}
+
+.section-title h2 {
+	position: absolute;
+	top: 15%;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 42px;
+}
+
+.section-title h2:hover {
+	color: #6C3F60;
+	transition-duration: 300ms;
+}
+
+.section-title-ipa {
+	position: absolute;
+	top: 70%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.section-title-ipa:hover {
+	color: #6C3F60;
+	transition-duration: 300ms;
+} 
+
+.ipa {
+	font-family: "Noto Serif", serif;
+}
+
+/* Index Page */
 #about {
 	margin-top: 0;
 	padding-top: 0;
@@ -286,44 +322,12 @@ https://mariodelvalle.github.io/CaptainIconWeb/ */
 	transform: translateX(-50%);
 	width: 70vw;
 	height: auto;
-	/*background: blue;*/
 }
 
 .timeline-wrap span a {
 	color: #6C3F60;
 	text-decoration: none;
 	font-weight: 400;
-}
-
-.section-title {
-	position: relative;
-	height: 25vh;
-	font-family: "Crimson Text", serif;
-}
-
-.section-title h2 {
-	position: absolute;
-	top: 15%;
-	left: 50%;
-	transform: translateX(-50%);
-	font-size: 42px;
-}
-
-.section-title h2:hover {
-	color: #6C3F60;
-	transition-duration: 300ms;
-}
-
-.section-title-ipa {
-	position: absolute;
-	top: 70%;
-	left: 50%;
-	transform: translateX(-50%);
-}
-
-.section-title-ipa:hover {
-	color: #6C3F60;
-	transition-duration: 300ms;
 }
 
 .timeline-catog {
@@ -387,19 +391,63 @@ https://mariodelvalle.github.io/CaptainIconWeb/ */
 	font-size: 14px;
 }
 
+/* Skills Section */
+
 #skills {
-	background: #EAE5EA;
+	background: #E5EDEB;
 }
 
 #skills-wrap {
 	position: relative;
 	left: 50%;
 	transform: translateX(-50%);
-	width: 80vw;
+	width: 60vw;
 	height: auto;
 }
 
+.skills-catog {
+	padding-top: 3vh;
+	padding-bottom: 5vh;
+}
 
+.skills-catog h3 {
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.skills-row {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 60vw;
+}
+
+.skills-cell {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 27vw;
+	padding: 0.5em 0em 0.7em 0em;
+}
+
+.skill-name {
+	font-size: 14px;
+	width: 10vw;
+}
+
+.bar {
+	display: block;
+	width: 15vw;
+	line-height: 0.6em;
+	border: solid 2px #6C3F60;
+}
+
+.bar span {
+	display: inline-block;
+	height: 0.6em;
+	background: #6C3F60;
+}
 
 #interests-wrap {
 	position: relative;
@@ -450,7 +498,7 @@ https://mariodelvalle.github.io/CaptainIconWeb/ */
 }
 
 #notes {
-	background: #E5EDEB;
+	background: #EAE5EA;
 	padding-bottom: 15vh;
 }
 
