@@ -75,7 +75,7 @@ body, html {
 	align-items: center;
 }*/
 
-/*General Section Styling*/
+/* general section styling */
 .section {
 	position: relative;
 	padding-top: 3vh;
@@ -159,6 +159,90 @@ body, html {
 	top: 8%;
 	height: auto;
 	width: 23vw;
+}
+
+#profile-and-links p {
+	position: absolute;
+	top: 78%;
+	font-size: 14px;
+	margin: 0;
+}
+
+#about-bio {
+	position: relative;
+	width: 40vw;
+	text-align: justify;
+}
+
+#plinks {
+	position: absolute;
+	display: flex;
+	flex-direction: row;
+	top: 85%;
+}
+
+#plinks div {
+	width: 3vw;
+	text-align: center;
+}
+
+#plinks span {
+	margin-right: 20px;
+}
+
+#name {
+	font-family: "Crimson Text", serif;
+	font-size: 60px;
+	margin-top: 0.1em;
+    margin-bottom: 0.1em;
+}
+
+/* tooltip implementation 
+@source https://codepen.io/cbracco/pen/qzukg */
+[data-tooltip] {
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+}
+
+/* Hide the tooltip content by default */
+[data-tooltip]:before,
+[data-tooltip]:after {
+  visibility: hidden;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Position tooltip relative to the element */
+[data-tooltip]:before {
+  position: absolute;
+  top: 120%;
+  left: -50%;
+  opacity: .8;
+  padding: 0.6em;
+  width: 4.5em;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #6C3F60;
+  color: #fff;
+  content: attr(data-tooltip);
+  text-align: center;
+  font-size: 12px;
+  line-height: 1;
+  font-weight: 600;
+}
+
+/* Show tooltip content on hover */
+[data-tooltip]:hover:before,
+[data-tooltip]:hover:after {
+  visibility: visible;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+  transition-duration: 400ms;
 }
 
 /* Icon fonts by Mario del Valle Guijarro
@@ -278,37 +362,6 @@ https://mariodelvalle.github.io/CaptainIconWeb/ */
 	content: "\e6d2";
 }
 
-#profile-and-links p {
-	position: absolute;
-	top: 78%;
-	font-size: 14px;
-	margin: 0;
-}
-
-#about-bio {
-	position: relative;
-	width: 40vw;
-	text-align: justify;
-	/*background: blue;*/
-}
-
-#plinks {
-	position: absolute;
-	display: flex;
-	flex-direction: row;
-	top: 85%;
-}
-
-#plinks span {
-	margin-right: 20px;
-}
-
-#name {
-	font-family: "Crimson Text", serif;
-	font-size: 60px;
-	margin-top: 0.1em;
-    margin-bottom: 0.1em;
-}
 
 /* Experience & Project Sections */
 
