@@ -490,14 +490,14 @@ https://mariodelvalle.github.io/CaptainIconWeb/ */
 }
 
 .bar {
-	display: block;
+	display: inline-block;
 	width: 15vw;
 	line-height: 0.6em;
 	border: solid 2px #6C3F60;
 }
 
 .bar span {
-	display: inline-block;
+	display: block;
 	height: 0.6em;
 	background: #6C3F60;
 }
