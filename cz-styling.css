@@ -242,7 +242,7 @@ body, html {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
-  transition-duration: 400ms;
+  transition-duration: 600ms;
 }
 
 /* Icon fonts by Mario del Valle Guijarro
