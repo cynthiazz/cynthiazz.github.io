@@ -157,13 +157,13 @@ body, html {
 #profile-and-links img {
 	position: absolute;
 	top: 8%;
-	height: auto;
-	width: 23vw;
+	height: 50vh;
+	width: auto;
 }
 
 #profile-and-links p {
 	position: absolute;
-	top: 78%;
+	top: 80%;
 	font-size: 14px;
 	margin: 0;
 }
@@ -178,7 +178,7 @@ body, html {
 	position: absolute;
 	display: flex;
 	flex-direction: row;
-	top: 85%;
+	top: 86%;
 }
 
 #plinks div {
