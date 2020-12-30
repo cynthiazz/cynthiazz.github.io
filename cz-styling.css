@@ -291,7 +291,7 @@ https://mariodelvalle.github.io/CaptainIconWeb/ */
 }
 
 /* fb */
-.icon-091:before {
+/*.icon-091:before {
 	content: "\e65a";
 	font-size: 22px;
 	color: #515151;
@@ -303,6 +303,19 @@ https://mariodelvalle.github.io/CaptainIconWeb/ */
 }
 .icon-093:before {
 	content: "\e65c";
+}*/
+
+/* cv */
+.icon-063:before {
+	content: "\e63e";
+	font-size: 22px;
+	color: #515151;
+}
+
+.icon-133:berfore {
+	content: "\e684";
+	font-size: 22px;
+	color: #515151;
 }
 
 /* linkedin */
@@ -340,6 +353,11 @@ https://mariodelvalle.github.io/CaptainIconWeb/ */
 /* book */
 .icon-079:before {
 	content: "\e64e";
+}
+
+/* console */
+.icon-077:before {
+	content: "\e64c";
 }
 
 /* music note */
@@ -501,6 +519,8 @@ https://mariodelvalle.github.io/CaptainIconWeb/ */
 	height: 0.6em;
 	background: #6C3F60;
 }
+
+/* interests section */
 
 #interests-wrap {
 	position: relative;
