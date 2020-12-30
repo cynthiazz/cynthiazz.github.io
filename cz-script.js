@@ -49,4 +49,10 @@ $(document).ready(function(){
 			scrollTop: $('#notes').offset().top - headerHeight
 		}, 800);
 	})
+
+	$('a[href="#phon"').click(function(){
+		$('html').animate({
+			scrollTop: $('#proj').offset().top - headerHeight
+		}, 800);
+	})
 })
